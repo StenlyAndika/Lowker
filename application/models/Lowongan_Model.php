@@ -3,7 +3,7 @@
 	/**
 	* 
 	*/
-	class Lowongan_Model extends CI_Model
+	class Lowongan_model extends CI_Model
 	{
 		
 		public function getAllLowonganDesc()

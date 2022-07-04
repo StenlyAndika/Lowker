@@ -7,7 +7,7 @@
         <div class="row">
             <?php foreach ($lowongan as $row) : ?>
             <div class="card mt-4 ml-4">
-                <?php if (date('d F Y') > date('d F Y', strtotime($row['bataswaktu']))) : ?>
+                <?php if (strtotime(date('d F Y')) > strtotime(date('d F Y', strtotime($row['bataswaktu'])))) : ?>
                     <span style="--my-color-var : #F55353; --my-content-var : 'kadaluarsa'"></span>
                 <?php else : ?>
                     <span style="--my-color-var : #3A5BA0; --my-content-var : 'tersedia'"></span>
